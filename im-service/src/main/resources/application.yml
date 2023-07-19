@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: liboyyds
+    url: jdbc:mysql://1.117.143.104:3306/im-nuyoah?serverTimezone=UTC&useSSL=false&characterEncoding=UTF8
+    username: root
+  application:
+    name: im-service
+
+server:
+  port: 8000
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:mapper/*.xml
+  global-config:
+    db-config:
+      update-strategy: NOT_EMPTY
