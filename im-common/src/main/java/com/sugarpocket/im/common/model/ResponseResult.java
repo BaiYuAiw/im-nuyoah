@@ -40,6 +40,14 @@ public class ResponseResult<D> {
         return responseResult;
     }
 
+    public static ResponseResult<?> newSuccessResult(String msg) {
+        ResponseResult<?> responseResult = new ResponseResult<>();
+        responseResult.setCode(SUCCESS);
+        responseResult.setMsg(msg);
+
+        return responseResult;
+    }
+
 
     public static ResponseResult<?> newFailResult() {
         ResponseResult<?> responseResult = new ResponseResult<>();

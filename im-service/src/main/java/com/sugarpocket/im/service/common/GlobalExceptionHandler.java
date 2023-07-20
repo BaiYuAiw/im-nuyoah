@@ -1,4 +1,4 @@
-package com.sugarpocket.im.service.user.web;
+package com.sugarpocket.im.service.common;
 
 import com.sugarpocket.im.common.exception.ErrorCode;
 import com.sugarpocket.im.common.exception.ServiceException;
